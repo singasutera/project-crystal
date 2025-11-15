@@ -1,0 +1,16 @@
+FIRST TIME DEPLOYMENT
+    fastapi dev main.py
+
+CLOSE RUNNING SERVER
+    (Ctrl + C)
+
+DEPLOYMENT  
+1.  Activate virtual environment from project directory
+       .\Project Crystal> .\newmoon\Activate.ps1
+2.  Run application
+       uvicorn main:app
+
+AFTER MAKING CHANGES, NEED TO CLOSE RUNNING SERVER AND RE-DEPLOY
+IF ON DEVELOPMENT ENVIRONMENT AND WANT TO SEE THE CHANGES LIVE:
+    uvicorn main:app --reload
+DO NOT DO THIS ON PRODUCTION ENVIRONMENT
