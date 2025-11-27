@@ -6,7 +6,7 @@ CLOSE RUNNING SERVER
 
 DEPLOYMENT  
 1.  Activate virtual environment from project directory
-       .\Project Crystal> .\newmoon\Activate.ps1
+       .\Project Crystal> .\newmoon\Scripts\Activate.ps1
 2.  Run application
        uvicorn main:app
 
