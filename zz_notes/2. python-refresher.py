@@ -24,29 +24,21 @@ car2 = Car("Honda", "Civic", 2023)
 
 # WHAT'S THE DIFFERENCE BETWEEN import AND from .. import ..?
 # say i created a module named my_math.py
-
-# [my_math.py]
-def bestnumber():
-    return "it's not 69"
-def may_contain_other_functions():
-    x = "and variables"
-    return x
+# see [my_math.py] for reference!
 
 # >>importing the whole module>>
-
-# [your_math.py file]
-# import my_math
-# result = my_math.bestnumber() !!!when accessing the function, need to mention the module
-# print(result)
+import my_math
+# when accessing the function, need to mention the module
+result = my_math.bestnumber() 
+print(result)
 
 # >>importing just the function>>
+from my_math import bestnumber
+# when accessing the function, no need to mention the module
+result = bestnumber() 
+print(result)
 
-# [your_math.py file]
-# from my_math import bestnumber
-# result = bestnumber() !!!access the function directly
-# print(result)
-
-# >>both will print "it's not 69", because it isn't the best number xd. but anyway...<<<
+# both will print "it's not 69", because it isn't the best number xd. but anyway...
 
 
 
