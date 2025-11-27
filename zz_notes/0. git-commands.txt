@@ -1,0 +1,12 @@
+INITIALIZING NEW REPOSITORY - Username and e-mail will be visible in commit history
+        git init
+        git config user.name "Noskerinos"
+        git config user.email "illinoska@duck.com"
+        git remote add origin github.com/singasutera/hello-world.git
+
+DAILY COMMIT AND PUSH
+        git add . OR git add {folder/files, ex: git add .foldername/ OR git add ./foldername/main.py ./foldername/another_file.py}
+        git commit -m "Message to accompany your commit."
+        git push -u origin main
+
+Origin is "main" because you configured "master" to be "main".
